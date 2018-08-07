@@ -14,7 +14,7 @@ dependencies:
   logging: '>=0.9.0 <0.12.0'
   path: '>=0.9.0 <2.0.0'
   source_span: '>=1.4.0 <2.0.0'
-  collection: '^1.14.11'
+  collection: '^1.14.6'
 
 dev_dependencies:
   test: ^1.2.0
