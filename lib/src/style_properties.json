@@ -1,0 +1,458 @@
+
+
+
+{
+    "color" : {
+        "type" : "<color>",
+        "inherit" : true,
+        "initial" : "<color>(0xff000000)",
+        "allow" : ["<color>", "transparent"]
+    },
+    
+
+
+    "font" : {
+        "order" : "orderOfAppearance",
+        "inherit" : false,
+        "computed" : ["font-style", "font-weight", "font-size", "font-family"]
+    },
+
+    "font-style" : {
+        "group" : "font",
+        "type" : "<identify>",
+        "inherit" : true,
+        "initial" : "normal",
+        "allow" : ["normal","italic","oblique","initial","inherit"]
+    },
+
+    "font-weight" : {
+        "group" : "font",
+        "type" : "<identify>",
+        "inherit" : true,
+        "initial" : "normal",
+        "allow" : ["normal", "bold", "bolder", "lighter", "initial", "inherit", "100", "200", "300", "400", "500", "600", "700", "800", "900"]
+    },
+
+    "font-size" : {
+        "group" : "font",
+        "inherit" : true,
+        "initial" : "medium",
+        "allow" : ["<size>", "medium", "xx-small", "x-small", "small", "large", "x-large", "xx-large", "smaller", "larger", "initial", "inherit"]
+    },
+    
+    "font-family" : {
+        "group" : "font",
+        "type" : "<identify>",
+        "inherit" : true,
+        "initial" : "default",
+        "allow" : ["<identify>", "default"]
+    },
+
+
+
+    "background" : {
+        "order" : "orderOfAppearance",
+        "inherit" : false,
+        "computed" : [
+            "background-color",
+            "background-image",
+            "background-position-x",
+            "background-position-y",
+            "background-repeat"]
+    },
+
+    "background-color" : {
+        "group" : "background",
+        "inherit" : false,
+        "initial" : "transparent",
+        "allow" : ["<color>", "transparent"]
+    },
+
+    "background-image" : {
+        "group" : "background",
+        "inherit" : false,
+        "initial" : "none",
+        "allow" : ["<url>", "none"]
+    },
+
+    "background-position-x" : {
+        "group" : "background",
+        "inherit" : false,
+        "initial" : "<size>(50, CSSUnit.percent)",
+        "allow" : ["<size>", "left", "right", "center", "initial", "inherit"]
+    },
+
+    "background-position-y" : {
+        "group" : "background",
+        "inherit" : false,
+        "initial" : "<size>(50, CSSUnit.percent)",
+        "allow" : ["<size>", "top", "bottom", "center", "initial", "inherit"]
+    },
+
+
+    "background-repeat" : {
+        "group" : "background",
+        "inherit" : false,
+        "initial" : "repeat",
+        "allow" : ["repeat", "repeat-x", "repeat-y", "no-repeat", "initial", "inherit"]
+    },
+
+    
+    "background-size" : {
+        "inherit" : false,
+        "initial" : "none",
+        "order" : "uniqueOrder",
+        "computed" : ["background-size-x", "background-size-y"]
+    },
+
+    "background-size-x" : {
+        "group" : "background-size",
+        "inherit" : false,
+        "initial" : "auto",
+        "allow" : ["<size>", "auto", "cover", "contain", "initial", "inherit"]
+    },
+
+    "background-size-y" : {
+        "group" : "background-size",
+        "inherit" : false,
+        "initial" : "auto",
+        "allow" : ["<size>", "auto", "cover", "contain", "initial", "inherit"]
+    },
+
+
+
+    "text-decoration" : {
+        "order" : "orderOfAppearance",
+        "inherit" : false,
+        "computed" : ["text-decoration-color", "text-decoration-style", "text-decoration-line"]
+    },
+
+    "text-decoration-color" : {
+        "group" : "text-decoration",
+        "type" : "<color>",
+        "inherit" : false,
+        "initial" : "<color>(0xff000000)",
+        "allow" : ["<color>", "transparent"]
+    },
+
+    "text-decoration-style" : {
+        "group" : "text-decoration",
+        "type" : "<identify>",
+        "inherit" : false,
+        "initial" : "solid",
+        "allow" : ["solid", "double", "dotted", "dashed", "wavy"]
+    },
+
+
+    "text-decoration-line" : {
+        "group" : "text-decoration",
+        "type" : "<identify>",
+        "inherit" : false,
+        "initial" : "none",
+        "allow" : ["none", "underline", "overline", "line-through"]
+    },
+
+    
+
+
+    "width" : {
+        "inherit" : false,
+        "initial" : "auto",
+        "allow" : ["<size>", "auto", "inherit", "initial"]
+    },
+
+    "height" : {
+        "inherit" : false,
+        "initial" : "auto",
+        "allow" : ["<size>", "auto", "inherit", "initial"]
+    },
+
+    "min-width" : {
+        "inherit" : false,
+        "initial" : "auto",
+        "allow" : ["<size>", "auto", "inherit", "initial"]
+    },
+
+    "min-height" : {
+        "inherit" : false,
+        "initial" : "auto",
+        "allow" : ["<size>", "auto", "inherit", "initial"]
+    },
+
+    "max-width" : {
+        "inherit" : false,
+        "initial" : "auto",
+        "allow" : ["<size>", "auto", "inherit", "initial"]
+    },
+
+    "max-height" : {
+        "inherit" : false,
+        "initial" : "auto",
+        "allow" : ["<size>", "auto", "inherit", "initial"]
+    },
+
+
+
+    
+    "padding" : {
+        "order" : "uniqueOrder",
+        "inherit" : false,
+        "computed" : ["padding-top", "padding-right", "padding-bottom", "padding-left"]  
+    },
+
+    "padding-top" : {
+        "group" : "padding",
+        "type" : "<size>",
+        "initial" : "<size>(0)",
+        "inherit" : false,
+        "allow" : ["initial", "<size>", "inherit"]
+    },
+
+    "padding-right" : {
+        "group" : "padding",
+        "type" : "<size>",
+        "initial" : "<size>(0)",
+        "inherit" : false,
+        "allow" : ["initial", "<size>", "inherit"]
+    },
+
+    "padding-bottom" : {
+        "group" : "padding",
+        "type" : "<size>",
+        "initial" : "<size>(0)",
+        "inherit" : false,
+        "allow" : ["initial", "<size>", "inherit"]
+    },
+
+    "padding-left" : {
+        "group" : "padding",
+        "type" : "<size>",
+        "initial" : "<size>(0)",
+        "inherit" : false,
+        "allow" : ["initial", "<size>", "inherit"]
+    },
+
+
+
+
+    "margin" : {
+        "order" : "uniqueOrder",
+        "inherit" : false,
+        "computed" : ["margin-top", "margin-right", "margin-bottom", "margin-left"]  
+    },
+
+    "margin-top" : {
+        "group" : "margin",
+        "type" : "<size>",
+        "initial" : "<size>(0)",
+        "inherit" : false,
+        "allow" : ["initial", "<size>", "inherit"]
+    },
+
+    "margin-right" : {
+        "group" : "margin",
+        "type" : "<size>",
+        "initial" : "<size>(0)",
+        "inherit" : false,
+        "allow" : ["initial", "<size>", "inherit"]
+    },
+
+    "margin-bottom" : {
+        "group" : "margin",
+        "type" : "<size>",
+        "initial" : "<size>(0)",
+        "inherit" : false,
+        "allow" : ["initial", "<size>", "inherit"]
+    },
+
+    "margin-left" : {
+        "group" : "margin",
+        "type" : "<size>",
+        "initial" : "<size>(0)",
+        "inherit" : false,
+        "allow" : ["initial", "<size>", "inherit"]
+    },
+
+
+
+
+
+
+    "border" : {
+        "order" : "orderOfAppearance",
+        "inherit" : false,
+        "computed" : ["border-width", "border-color", "border-style"]
+    },
+    
+    "border-width" : {
+        "group" : "border",
+        "order" : "uniqueOrder",
+        "inherit" : false,
+        "computed" : ["border-top-width", "border-right-width", "border-bottom-width", "border-left-width"]
+    },
+    
+    "border-color" : {
+        "group" : "border",
+        "order" : "uniqueOrder",
+        "inherit" : false,
+        "computed" : ["border-top-color", "border-right-color", "border-bottom-color", "border-left-color"]
+    },
+    
+    "border-style" : {
+        "group" : "border",
+        "order" : "uniqueOrder",
+        "inherit" : false,
+        "computed" : ["border-top-style", "border-right-style", "border-bottom-style", "border-left-style"]
+    },
+    
+
+    "border-top-width" : {
+        "group" : "border-width",
+        "type" : "<size>",
+        "initial" : "<size>(0)",
+        "inherit" : false,
+        "allow" : ["<size>"]
+    },
+     
+    "border-right-width" : {
+        "group" : "border-width",
+        "type" : "<size>",
+        "initial" : "<size>(0)",
+        "inherit" : false,
+        "allow" : ["<size>"]
+    },
+    
+     
+    "border-bottom-width" : {
+        "group" : "border-width",
+        "type" : "<size>",
+        "initial" : "<size>(0)",
+        "inherit" : false,
+        "allow" : ["<size>"]
+    },
+    
+    "border-left-width" : {
+        "group" : "border-width",
+        "type" : "<size>",
+        "initial" : "<size>(0)",
+        "inherit" : false,
+        "allow" : ["<size>"]
+    },
+    
+
+
+
+    "border-top-color" : {
+        "group" : "border-color",
+        "type" : "<color>",
+        "initial" : "<color>(0)",
+        "inherit" : false,
+        "allow" : ["<color>", "transparent"]
+    },
+     
+    "border-right-color" : {
+        "group" : "border-color",
+        "type" : "<color>",
+        "initial" : "<color>(0)",
+        "inherit" : false,
+        "allow" : ["<color>", "transparent"]
+    },
+    
+     
+    "border-bottom-color" : {
+        "group" : "border-color",
+        "type" : "<color>",
+        "initial" : "<color>(0)",
+        "inherit" : false,
+        "allow" : ["<color>", "transparent"]
+    },
+    
+    "border-left-color" : {
+        "group" : "border-color",
+        "type" : "<color>",
+        "initial" : "<color>(0)",
+        "inherit" : false,
+        "allow" : ["<color>", "transparent"]
+    },
+    
+
+    "<border-style>" : ["none", "hidden", "dotted", "dashed", "solid", "double", "groove", "ridge", "inset", "outset"],
+
+    "border-top-style" : {
+        "group" : "border-style",
+        "type" : "<identify>",
+        "initial" : "none",
+        "inherit" : false,
+        "allow" : ["none", "hidden", "dotted", "dashed", "solid", "double", "groove", "ridge", "inset", "outset"]
+    },
+     
+    "border-right-style" : {
+        "group" : "border-style",
+        "type" : "<identify>",
+        "initial" : "none",
+        "inherit" : false,
+        "allow" : ["none", "hidden", "dotted", "dashed", "solid", "double", "groove", "ridge", "inset", "outset"]
+    },
+    
+     
+    "border-bottom-style" : {
+        "group" : "border-style",
+        "type" : "<identify>",
+        "initial" : "none",
+        "inherit" : false,
+        "allow" : ["none", "hidden", "dotted", "dashed", "solid", "double", "groove", "ridge", "inset", "outset"]
+    },
+    
+    "border-left-style" : {
+        "group" : "border-style",
+        "type" : "<identify>",
+        "initial" : "none",
+        "inherit" : false,
+        "allow" : ["none", "hidden", "dotted", "dashed", "solid", "double", "groove", "ridge", "inset", "outset"]
+    },
+
+        
+
+
+
+    "border-radius" : {
+        "order" : "uniqueOrder",
+        "inherit" : false,
+        "computed" : ["border-top-left-radius", "border-top-right-radius", "border-bottom-right-radius", "border-bottom-left-radius"]
+    },
+    
+    "border-top-left-radius" : {
+        "group" : "border-radius",
+        "type" : "<size>",
+        "initial" : "<size>(0)",
+        "inherit" : false,
+        "allow" : ["<size>"]
+    },
+     
+    "border-top-right-radius" : {
+        "group" : "border-radius",
+        "type" : "<size>",
+        "initial" : "<size>(0)",
+        "inherit" : false,
+        "allow" : ["<size>"]
+    },
+    
+     
+    "border-bottom-right-radius" : {
+        "group" : "border-radius",
+        "type" : "<size>",
+        "initial" : "<size>(0)",
+        "inherit" : false,
+        "allow" : ["<size>"]
+    },
+    
+    "border-bottom-left-radius" : {
+        "group" : "border-radius",
+        "type" : "<size>",
+        "initial" : "<size>(0)",
+        "inherit" : false,
+        "allow" : ["<size>"]
+    },
+    
+
+"":""}

@@ -1,0 +1,17 @@
+{
+    // reload window is required to apply.
+    "watch-run.targetList": [
+        {
+            "target": "src/style_properties.json",
+            "task": "gen_style_properties"
+        },
+        {
+            "target": "src/style_impl_gen.js",
+            "task": "gen_style_properties"
+        }        
+    ],
+    "debug.inlineValues": true,
+    "debug.openDebug": "openOnSessionStart",
+    "dart.debugExternalLibraries": true,
+    "dart.debugSdkLibraries": true
+}
